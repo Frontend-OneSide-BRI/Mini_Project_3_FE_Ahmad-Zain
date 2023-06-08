@@ -18,15 +18,10 @@ const Home = () => {
               Watch anywhere. Cancel anytime.
             </p>
             <p className="text-2xl text-white font-normal tracking-wide">
-              Ready to watch? Login to see your favorite movies.
+              Ready to watch? Let's proceed to start your journey!
             </p>
-            <div className="w-3/6 flex items-center justify-center h-14">
-              <input
-                type="text"
-                className="w-2/3 h-full bg-black/40 border border-reds focus:outline-offset-4 focus:outline-white m-2 p-2 rounded"
-                placeholder="Email address"
-              />
-              <Button text="Sign In" className="w-1/3 h-full text-2xl" />
+            <div className="w-full flex items-center justify-center h-14">
+              <Button text="Let's go!" className="w-1/3 h-full text-2xl" />
             </div>
           </div>
         </div>
