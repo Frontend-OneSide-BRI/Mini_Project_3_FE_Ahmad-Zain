@@ -20,18 +20,6 @@ export const movieApi = createApi({
           url: `discover/movie?api_key=${API_KEY}&with_genres=${genres}&page=${pages}`,
         };
       },
-      serializeQueryArgs: ({ endpointName }) => {
-        return endpointName;
-      },
-      merge: (currentCache, newItems) => {
-        if (newItems.page === 1) {
-          currentCache.results.splice(...newItems.results);
-        }
-        currentCache.results.push(...newItems.results);
-      },
-      forceRefetch({ currentArg, previousArg }) {
-        return currentArg !== previousArg;
-      },
     }),
     getMovieByNowPlaying: builder.query({
       query: (page = 1) =>
