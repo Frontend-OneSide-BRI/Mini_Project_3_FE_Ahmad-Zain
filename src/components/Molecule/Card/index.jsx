@@ -4,7 +4,7 @@ import moment from "moment";
 const Card = ({ title, overview, date, poster, id_movie }) => {
   return (
     <Link
-      to={`/movie/${id_movie}`}
+      to={`/movies/${id_movie}`}
       className="group relative block bg-black rounded-xl h-[20rem] lg:h-[25rem] shadow-2xl shadow-white/40"
     >
       <img
